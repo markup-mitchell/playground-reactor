@@ -4,10 +4,13 @@ import React from 'react';
 export default class FreeType extends React.Component {
     
     constructor() {
+
         super();
         this.state = {
-                        liveInput: {}
+                        liveInput: '',
+                        test: "Hey"
         };
+
         let displayBox = document.getElementById('output');
     }
 
@@ -16,25 +19,23 @@ export default class FreeType extends React.Component {
         var value = event.target.value;
 
         this.setState(({liveInput}) => {
-            liveInput[property] = value;
-            console.log(value);
+            // liveInput[property] = value;
             displayBox.innerHTML = value;
-            return { liveInput: liveInput};
+            console.log(this.state);
+            return {liveInput: liveInput};
             }
         )}
     
-    
     render() {
-
-
     
-    return (
+        return (
             <div className="form-group">
                 <h1>This is the input field component:</h1>
                 <input type="text" id="freetype" onChange={this.setValue.bind(this, "liveInput")} />
-                <h2 id="displayBox">{this.value}</h2>
+                <h2 id="displayBox"></h2>
+                <h2>{this.state.liveInput}</h2>
             </div>
-    )
+        )
     }
 }
 
