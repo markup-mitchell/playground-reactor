@@ -7,11 +7,10 @@ export default class App extends React.Component {
     render() {
         return(
             <div>
-                <h1>This is the App.js heading</h1>
+                <h1>Real-time Text Analytics</h1>
                 <FreeType  />
             </div>
         );
     }
 }
-
 

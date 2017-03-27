@@ -1,4 +1,6 @@
 import React from 'react';
+import TextLength from './TextLength';
+import CaseStats from './CaseStats';
 
 
 export default class FreeType extends React.Component {
@@ -6,9 +8,9 @@ export default class FreeType extends React.Component {
     constructor() {
         super();
         this.state = {
-                        liveInput: {}
+                        liveInput: {},
+                        text: "Could be a message!"
         };
-        let displayBox = document.getElementById('output');
     }
 
     setValue(property, event) {
@@ -17,8 +19,7 @@ export default class FreeType extends React.Component {
 
         this.setState(({liveInput}) => {
             liveInput[property] = value;
-            console.log(value);
-            displayBox.innerHTML = value;
+            // console.log(liveInput[property]);
             return { liveInput: liveInput};
             }
         )}
@@ -32,7 +33,9 @@ export default class FreeType extends React.Component {
             <div className="form-group">
                 <h1>This is the input field component:</h1>
                 <input type="text" id="freetype" onChange={this.setValue.bind(this, "liveInput")} />
-                <h2 id="displayBox">{this.value}</h2>
+                <TextLength text={this.state.liveInput.liveInput} />
+                <CaseStats text={this.state.liveInput.liveInput} />
+                
             </div>
     )
     }
