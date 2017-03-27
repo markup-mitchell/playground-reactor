@@ -13,6 +13,6 @@ const caseStats = (props) => {
             <h2>Lower Case: {lowCount}</h2>
         </div>
     )
-};  
+};
 
 export default caseStats;
