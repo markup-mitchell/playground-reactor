@@ -8,7 +8,7 @@ export default class App extends React.Component {
         return(
             <div>
                 <h1>Real-time Text Analytics</h1>
-                <FreeType  />
+                <FreeType />
             </div>
         );
     }
