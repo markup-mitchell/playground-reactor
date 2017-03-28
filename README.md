@@ -39,3 +39,7 @@ After cloning the repo, you'll probably have to install some npm modules to get 
 	$ sudo npm i -D webpack webpack-dev-server html-webpack-plugin
 
 If you've set up your npm permissions correctly you won't have to sudo, but I'm pretty sloppy so that's on my to-do list. 
+
+BTW, I set up my react environment using the [codecademy](https://www.codecademy.com/articles/react-setup-) instructions. That link takes you to the condensed list where I got the above commands, but you can backtract the url from there for the whole setup process if you like.
+
+It's a MASSIVE HASSLE in my view.
