@@ -33,10 +33,9 @@ I won't waffle on more, you get the idea.
 
 After cloning the repo, you'll probably have to install some npm modules to get the project to compile.
 
-* react
-* react-dom
-* webserver
-* html-plugin something
-* I dunno. This is part of the learning process. see Codecademy's React tutorial like I did! (link to follow)
+    $ sudo npm i -S react
+	$ sudo npm i -S react-dom
+	$ sudo npm i -D babel-core babel-loader babel-preset-react
+	$ sudo npm i -D webpack webpack-dev-server html-webpack-plugin
 
-
+If you've set up your npm permissions correctly you won't have to sudo, but I'm pretty sloppy so that's on my to-do list. 
