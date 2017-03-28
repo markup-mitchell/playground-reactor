@@ -34,9 +34,8 @@ export default class App extends React.Component {
                 <FreeType acceptInput={this.setValue.bind(this, "liveInput")} />
                 <TextLength text={this.state.liveInput.liveInput} />
                 <CaseStats text={this.state.liveInput.liveInput} />
-                <NonAlphaNum text={this.state.liveInput.liveInput} /> 
+                <NonAlphaNum text={this.state.liveInput.liveInput} />
             </div>
         );
     }
 }
-
